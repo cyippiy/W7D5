@@ -5,6 +5,8 @@
 //= require_self
 //= require_tree ./channels
 
+console.log("i am the cable file")
+
 (function() {
   this.App || (this.App = {});
 

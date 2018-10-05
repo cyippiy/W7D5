@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+
   validates :password, length: {minimum: 6, presence: true}
   validates :username, :session_token, presence: true
 
@@ -29,4 +30,6 @@ class User < ApplicationRecord
   def is_password?(pw)
     BCrypt::Password.new(self.password_digest).is_password?(pw)
   end
+
+
 end
