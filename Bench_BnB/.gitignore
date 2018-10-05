@@ -1,0 +1,8 @@
+node_modules/
+./bundle.js
+./bundle.js.map
+/tmp/*
+/log/*
+!/log/.keep
+!/tmp/.keep
+/yarn-error.log
